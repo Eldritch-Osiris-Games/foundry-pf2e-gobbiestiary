@@ -1,0 +1,58 @@
+{
+  "title": "Gobbiestiary",
+  "id": "foundry-pf2e-gobbiestiary",
+  "name": "foundry-pf2e-gobbiestiary",
+  "description": "",
+  "manifest": "https://raw.githubusercontent.com/Eldritch-Osiris-Games/foundry-pf2e-gobbiestiary/main/module.json",
+  "download": "https://github.com/Eldritch-Osiris-Games/foundry-pf2e-gobbiestiary/archive/refs/heads/main.zip",
+  "url": "https://github.com/Eldritch-Osiris-Games/foundry-pf2e-gobbiestiary/",
+  "authors": [
+    {
+      "name": "Robin Skye"
+    }
+  ],
+  "version": "v1.0.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10.285"
+  },
+  "relationships": {
+    "systems": {
+      "id": "pf2e",
+      "manifest": "https://github.com/foundryvtt/pf2e/releases/download/latest/system.json",
+      "compatibility": {
+        "minimum": "4.0.0"
+      }
+    }
+  },
+  "packs": [
+    {
+      "name": "gobbiestiary",
+      "label": "Gobbiestiary",
+      "path": "./packs/gobbiestiary.db",
+      "type": "Actor",
+      "module": "Gobbiestiary",
+      "system": "pf2e"
+    },
+    {
+      "name": "gobbiestiary-items",
+      "label": "Gobbiestiary Items",
+      "path": "./packs/gobbiestiary-items.db",
+      "type": "Item",
+      "module": "Gobbiestiary",
+      "system": "pf2e"
+    }
+  ],
+  "flags": {
+    "eog-gobbiestiary": {
+      "pf2e-homebrew": {
+        "baseWeapons": {
+          "tallsplitter": {
+            "label": "Tallsplitter",
+            "description": ""
+          }
+        }
+      }
+    }
+  }
+}
